@@ -32,12 +32,3 @@ contract.getPastEvents('Transfer', {
 	process.exit()
 });
 
-/*
-var start_block = 5218685;
-web3.eth.getBlock("latest")
-	.then(function(block){
-		last_block = block.number
-		console.log(last_block);
-		get_transactions(start_block, block.number, contract);
-	});
-*/
