@@ -4,7 +4,7 @@ import json
 from tqdm import tqdm
 
 
-with open("../data/bat_wallets.json") as fp:
+with open("../data/bunny_wallets.json") as fp:
     wallets = json.load(fp)
 
 all_txns = []
@@ -75,10 +75,10 @@ for bin_idx in xrange(5):
 import random
 random.shuffle(all_nodes)
 
-all_nodes = sorted(all_nodes, key=lambda x:x['rel_value'])[::-1][:20000]
+all_nodes = sorted(all_nodes, key=lambda x:x['rel_value'])[::-1][:2000]
 
 
-with open("./bat_nodes.json", "w") as fp:
+with open("./bunny_nodes.json", "w") as fp:
     json.dump(all_nodes, fp)
 
 
